@@ -1,0 +1,38 @@
+<body><mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false" style="background-color: #d2e2f3 ;">
+    <mat-toolbar >Menu</mat-toolbar>
+    <mat-nav-list class="menuList">
+      <p mat-list-item routerLink="/addTask">Add Task</p>
+      <p mat-list-item routerLink="/archived" >Archived</p>
+      <p mat-list-item routerLink="/completed">Completed</p>
+      <p mat-list-item routerLink="/past">Past-Tasks</p>
+      <p mat-list-item routerLink="/today">Today</p>
+      <p mat-list-item routerLink="/restOfTheTasks">Remaining Tasks </p>
+      <hr>
+      <p mat-list-item>Priority Level:</p>
+      <p mat-list-item>High</p><hr color="red" style="width: 50px;position: relative;top:-32px;left:40px">
+      <p mat-list-item>Medium</p><hr color="yellow" style="width: 50px;position: relative;top:-32px;left:40px">
+      <p mat-list-item>Low</p><hr color="blue" style="width: 50px;position: relative;top:-32px;left:40px">
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+ 
+    <!-- <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>TodoList</span>
+    </mat-toolbar> -->
+    <app-todo></app-todo>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+</body>

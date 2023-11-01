@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');.nav {
+    background-color: #6ea5e0 ;
+    height:2.6cm;
+}
+
+.title {
+    margin-left:35%;
+    font-family:"Signika";
+    font-size: xx-large;
+    color: #121210;
+    padding-top:0.25%;
+}
+
+p
+{
+    padding:1%;
+    color:#EFF2C0;
+    margin-left:2.5%;
+    margin-top: 1%;
+}
+.left
+{
+    margin-left: 15%;
+}
+ 
+.logOut
+{
+    margin-left:36%;
+    font-family: 'Signika';
+    background-color: transparent;
+}
+
+.image{
+    position: relative;
+    right:-33%;
+    width: 4%;
+    height: auto;
+  }
+  

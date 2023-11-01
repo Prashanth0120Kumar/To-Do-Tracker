@@ -1,0 +1,43 @@
+.professional-card {
+    width: 600px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  
+  .form-field {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  mat-label {
+    font-weight: 600;
+  }
+  
+  .submit-button {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .desc
+  {
+    margin-left:10px;
+    width: 50%;
+  }
+
+  .cat
+  {
+    width:100%;
+  }
+
+  .time
+  {
+    margin-left:10px;
+
+  }
+  .add
+  {
+    font-family: 'Times New Roman', Times, serif;
+  }

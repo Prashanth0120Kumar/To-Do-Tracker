@@ -1,0 +1,48 @@
+<!-- <form (submit)="login()">
+    <input type="text" [(ngModel)]="User.userEmail" name="userEmail" placeholder="User Email">
+    <input type="password" [(ngModel)]="User.userPassword" name="userPassword" placeholder="Password">
+    <button type="submit">Log In</button>
+</form> -->
+
+
+<!-- <h2>Login Form</h2>
+<div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+<form action="/action_page.php" method="post"(submit)="login()">
+    <div class="container">
+        <label for="uname"><b>UserEmail</b></label>
+    <input type="text" [(ngModel)]="User.userEmail" name="userEmail" placeholder="User Email">
+    <label for="uname"><b>userPassword</b></label>
+    <input type="password" [(ngModel)]="User.userPassword" name="userPassword" placeholder="Password">
+    <button type="submit">Log In</button>
+</div>
+</form> -->
+<mat-toolbar class="nav">
+  <img class="image" src="../../assets/to-do-list.png"/>
+  <button mat-icon-button type="text"  routerLink="" style="margin-left: 75%;margin-right: 4%;font-size: 20px;color: white;">Home</button>
+  <button mat-icon-button type="text"  routerLink="/register" style="margin-left: auto;margin-right: 5%; font-size: 20px;color: white;">Sign-Up</button>
+
+     
+</mat-toolbar>
+<img  class="loginImg" src="../../assets/loginImg.png"/>
+
+<mat-card class="login-card">
+
+  <form [formGroup]="loginForm" (submit)="login()">
+    <mat-form-field appearance="outline">
+      <mat-label>Enter your Email</mat-label>
+      <input matInput type="text" formControlName="userEmail" placeholder="User Email">
+      <mat-error *ngIf="loginForm.get('userEmail')?.hasError('required')">Email is required</mat-error>
+      <mat-error *ngIf="loginForm.get('userEmail')?.hasError('email')">Invalid email address</mat-error>
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline">
+      <mat-label>Enter the Password</mat-label>
+      <input matInput type="password" formControlName="userPassword" placeholder="Password">
+      <mat-error *ngIf="loginForm.get('userPassword')?.hasError('required')">Password is required</mat-error>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button type="submit" color="primary" class="btn" [disabled]="!loginForm.valid">Log In</button>
+  </form>
+</mat-card>

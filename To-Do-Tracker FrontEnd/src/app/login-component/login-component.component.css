@@ -1,0 +1,123 @@
+.login-card {
+  /* max-width: 400px; */
+  width: 25%;
+  padding: 20px;
+  border: 1px solid darkslategray;
+  box-shadow: 0px 0px 10px 10px #d0e7fe;
+  border-radius: 4px;
+  background-color: #fff;
+  border-radius: 25px;
+  margin-left:55%;
+  margin-top:-440px;
+  text-align: center;
+}
+
+mat-form-field {
+  width: 75%;
+  margin-top: 15px;
+}
+
+button[type="button"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width:140px;
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.loginImg
+{
+  width:60%;
+  margin-top: 3%;
+}
+
+.header
+{
+  transform: scale(0.5)
+}
+
+.nav{
+  background-color: #6ea5e0;
+  padding-bottom: 5px;
+}
+
+.image{
+  margin-left: 3.5%;
+  width: 4%;
+  height: auto;
+}
+
+.btn{
+  padding: 25px;
+  width: 45%;
+  border-radius: 25px;
+
+}
+
+
+
+/* body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+} */
+
+
